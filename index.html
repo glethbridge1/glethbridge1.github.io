@@ -26,30 +26,66 @@
             background-position: center;
             background-size: 100% 100%;
             min-height: 100%;
-        }
+      }
+          
         .bgcolor{background-color: #b5eab9;}
+      
+      .mobile-display{display:none}
+      .desktop-display{display:block}
+      @media (max-width:800px){
+      . desktop-display {display:none}
+      . mobile-display {display:block}
+      }
 
 
     </style>
+    
 </head>
 <body>
-
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft">
-      <img src="LogoBLUE.png" alt="Works As One">
+  <div class="desktop-display">
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+      <div class="w3-display-topleft">
+        <img src="LogoBLUE.png" alt="Works As One">
+      </div>
+      <div class="w3-display-topmiddle w3-padding-48">
+        <h1 class="w3-jumbo w3-animate-zoom">COMING SOON</h1>
+        <hr class="w3-border-grey" style="margin:auto;width:40%">
+        <p id="demo" style="font-size:25px;text-align: center;" class="bgcolor"></p>
+      </div>
+      <div class="w3-padding w3-display-topright">
+        <p><a class="w3-btn w3-blue w3-hover-red w3-round-xxlarge" href = "mailto:contact@worksas.one">REGISTER INTEREST</a></p>
+      </div>
+      <div class="w3-padding w3-display-bottomleft">
+        <p>Please note this is not a real product/service
+        but is used for the PHY9012M-2122 module at UOL</p>
+      </div>
     </div>
-    <div class="w3-display-topmiddle w3-padding-48">
-      <h1 class="w3-jumbo w3-animate-zoom">COMING SOON</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p id="demo" style="font-size:25px;text-align: center;" class="bgcolor"></p>
+    
+  <div class="mobile-display">
+    <div class="bgcolor w3-text-white">
+      <div class="w3-display-topmiddle">
+        <img src="LogoBLUE.png" alt="Works As One">
+        <p><a class="w3-btn w3-blue w3-hover-red w3-round-xxlarge w3-padding w3-display-topright" href = "mailto:contact@worksas.one">REGISTER INTEREST</a></p>
+      </div>
+      <div class="w3-display-topmiddle w3-padding-48">
+        <h1 class="w3-jumbo w3-animate-zoom">COMING SOON</h1>
+        <hr class="w3-border-grey" style="margin:auto;width:40%">
+        <p id="demo" style="font-size:25px;text-align: center;" class="bgcolor"></p>
+      </div>
+        <img src="laptop.png" alt="Desktop version" class="w3-image">
+      </div>
+      </div>
+        <img src="phone.png" alt="Mobile version" class="w3-image">
+      </div>
+      </div>
+        <img src="tablet.png" alt="Tablet version" class="w3-image">
+      </div>
+      <div class="w3-padding w3-display-bottomleft">
+        <p>Please note this is not a real product/service
+        but is used for the PHY9012M-2122 module at UOL</p>
+      </div>
     </div>
-    <div class="w3-padding w3-display-topright">
-      <p><a class="w3-btn w3-blue w3-hover-red w3-round-xxlarge" href = "mailto:contact@worksas.one">REGISTER INTEREST</a></p>
-    </div>
-    <div class="w3-padding w3-display-bottomleft">
-      <p>Please note this is not a real product/service
-      but is used for the PHY9012M-2122 module at UOL</p>
-    </div>
+    
   </div>
 
   <script>
